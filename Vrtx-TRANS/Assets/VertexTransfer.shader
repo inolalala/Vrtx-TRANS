@@ -7,6 +7,7 @@
 		_TransferThreshould("Transfer Threshould", float) = 1
 		_Emission ("Emmisive Color", Color) = (0,0,0,0)
 		_EmissionThreshould("Emission Threshould", float) = 1
+		
 	}
 
 		SubShader
@@ -44,7 +45,7 @@
 			{
 				v2f o;
 				//o.vertex *= (_TransferVector * _TransferThreshould);
-				if (v.vertex.x > _TransferThreshould -1 || v.vertex.y > _TransferThreshould -1 || v.vertex.z > _TransferThreshould -1)
+				if (v.vertex.x > _TransferThreshould || v.vertex.y > _TransferThreshould || v.vertex.z > _TransferThreshould)
 				{
 					v.vertex.x +=  _TransferVector.x * 10;
 					v.vertex.y +=  _TransferVector.y * 10;
