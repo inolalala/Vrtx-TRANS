@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VertexTransfer
-  m_Shader: {fileID: 4800000, guid: cb09463237f6848a185c1e52d8c2657f, type: 3}
+  m_Name: NoisyVertexTransfer
+  m_Shader: {fileID: 4800000, guid: 1739196990d454d6f8a76ec55eed3b59, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -67,14 +67,15 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _MoveThreshould: 0
     - _OcclusionStrength: 1
     - _Offset: 0.636
     - _Parallax: 0.02
+    - _Seed: 5
+    - _Size: -2000
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TransferThreshould: 0.1
+    - _TransferThreshould: 0
     - _UVSec: 0
     - _VertexX: 20
     - _VertexY: 15
@@ -85,4 +86,4 @@ Material:
     - _Emission: {r: 0.5512473, g: 0.4022784, b: 0.754717, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _TrancferVector: {r: 0, g: 0, b: 0, a: 0}
-    - _TransferVector: {r: 1, g: 0, b: 1, a: 0}
+    - _TransferVector: {r: 0, g: 0, b: -25.648462, a: 0}

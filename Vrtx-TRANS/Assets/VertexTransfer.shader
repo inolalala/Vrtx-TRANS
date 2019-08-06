@@ -7,6 +7,7 @@
 		_TransferThreshould("Transfer Threshould", float) = 1
 		_Emission ("Emmisive Color", Color) = (0,0,0,0)
 		_EmissionThreshould("Emission Threshould", float) = 1
+		_MoveThreshould("Move Thereshould", Range(0,1)) = 0
 		
 	}
 
